@@ -1,22 +1,22 @@
-import javax.swing.JFrame;
+import javax.swing.JFrame;			//Imports for stuff
 import javax.swing.JOptionPane;
 
-import java.awt.Canvas;
+import java.awt.Canvas;					
 import java.awt.Color;
 import java.awt.FontMetrics;
-import java.awt.Graphics;
+import java.awt.Graphics;			//Graphics libs import
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
-public class Main extends JFrame {
+public class Main extends JFrame {				//Main class
 	public static void main(String args[]) {
 		new Main();
 	}
 	
-	public Main() {
+	public Main() {							//Main method run on init
 		super("Minesweeper");
 		super.setSize(300, 300);
 		super.add(new MineSweeper(25, 25));
@@ -39,7 +39,7 @@ class MineSweeper extends Canvas {
 		this(25, 25);
 	}
 	
-	public MineSweeper(int width, int height) {
+	public MineSweeper(int width, int height) {			//Create MineSweeper game
 		board = new ArrayList<ArrayList<Cell>>();
 		flagging = false;
 		mines = 0;
