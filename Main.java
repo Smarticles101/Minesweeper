@@ -1,10 +1,10 @@
-import javax.swing.JFrame;
+import javax.swing.JFrame;			//Imports for stuff
 import javax.swing.JOptionPane;
 
-import java.awt.Canvas;
+import java.awt.Canvas;					
 import java.awt.Color;
 import java.awt.FontMetrics;
-import java.awt.Graphics;
+import java.awt.Graphics;			//Graphics libs import
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
